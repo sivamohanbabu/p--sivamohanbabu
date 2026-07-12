@@ -9,13 +9,9 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
+import { groupPictures } from "@/lib/gallery-images"
 
 export function HeroSection() {
-  const groupPictures = [
-    encodeURI("/p--sivamohanbabu/assets/group_pictures/IMG_7109.JPG"),
-    encodeURI("/p--sivamohanbabu/assets/group_pictures/IMG_7113.JPG"),
-    encodeURI("/p--sivamohanbabu/assets/group_pictures/WhatsApp Image 2026-05-01 at 8.08.34 AM.jpeg"),
-  ]
 
   return (
     <section className="w-full relative overflow-hidden bg-background text-foreground flex flex-col items-center">
