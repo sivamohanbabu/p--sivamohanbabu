@@ -12,9 +12,9 @@ import Autoplay from "embla-carousel-autoplay"
 
 export function HeroSection() {
   const groupPictures = [
-    encodeURI("/assets/group_pictures/IMG_7109.JPG"),
-    encodeURI("/assets/group_pictures/IMG_7113.JPG"),
-    encodeURI("/assets/group_pictures/WhatsApp Image 2026-05-01 at 8.08.34 AM.jpeg"),
+    encodeURI("/p--sivamohanbabu/assets/group_pictures/IMG_7109.JPG"),
+    encodeURI("/p--sivamohanbabu/assets/group_pictures/IMG_7113.JPG"),
+    encodeURI("/p--sivamohanbabu/assets/group_pictures/WhatsApp Image 2026-05-01 at 8.08.34 AM.jpeg"),
   ]
 
   return (
@@ -50,7 +50,7 @@ export function HeroSection() {
         {/* Logo and Photo */}
         <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 mb-2 shadow-2xl bg-muted flex items-center justify-center">
           <Image 
-            src="/assets/logo_and_photo/headshot.jpg" 
+            src="/p--sivamohanbabu/assets/logo_and_photo/headshot.jpg" 
             alt="Professional Trainer" 
             fill 
             className="object-cover"

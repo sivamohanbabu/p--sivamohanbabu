@@ -15,9 +15,9 @@ export function TrainingDomains() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px] md:auto-rows-[300px]">
           {/* Corporate Training (Large Feature) */}
-          <Card className="md:col-span-2 md:row-span-2 flex flex-col justify-end relative overflow-hidden group border-primary/10">
+          <div className="md:col-span-2 md:row-span-2 flex flex-col justify-end relative overflow-hidden group border-primary/10">
             <Image 
-              src={encodeURI("/assets/corporatetraining/WhatsApp Image 2026-07-12 at 11.26.40 PM.jpeg")}
+              src="/p--sivamohanbabu/assets/corporatetraining/WhatsApp Image 2026-07-12 at 11.26.40 PM.jpeg"
               alt="Corporate Training Session"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -29,12 +29,12 @@ export function TrainingDomains() {
                 Customized upskilling programs for enterprise teams. Specializing in transitioning teams to modern Full-Stack architectures, Data Analytics, and AI/RAG pipelines.
               </CardDescription>
             </div>
-          </Card>
+          </div>
 
           {/* Online Bootcamps */}
-          <Card className="relative overflow-hidden group border-primary/10">
+          <div className="relative overflow-hidden group border-primary/10">
             <Image 
-              src={encodeURI("/assets/online_training/image (3).png")}
+              src="/p--sivamohanbabu/assets/online_training/image (3).png"
               alt="Online Bootcamp"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -46,7 +46,7 @@ export function TrainingDomains() {
                 Intensive, hands-on virtual cohorts focusing on practical implementation.
               </CardDescription>
             </div>
-          </Card>
+          </div>
 
           {/* Classroom Sessions */}
           <Card className="relative overflow-hidden group border-primary/10">
@@ -69,9 +69,9 @@ export function TrainingDomains() {
           </Card>
 
           {/* Faculty Development Programs (FDP) */}
-          <Card className="md:col-span-3 relative overflow-hidden group border-primary/10">
+          <div className="md:col-span-3 relative overflow-hidden group border-primary/10">
             <Image 
-              src={encodeURI("/assets/fdp/Screenshot (1).png")}
+              src="/p--sivamohanbabu/assets/fdp/Screenshot (1).png"
               alt="Faculty Development Programs"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -85,7 +85,7 @@ export function TrainingDomains() {
                 </CardDescription>
               </div>
             </div>
-          </Card>
+          </div>
         </div>
       </div>
     </section>

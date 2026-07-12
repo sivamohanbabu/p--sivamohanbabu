@@ -22,10 +22,10 @@ export function CaseStudies() {
               <CardDescription>Vector Database & LLM Integration</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4 flex-1 flex flex-col">
-              <div className="relative aspect-video w-full bg-muted/40 rounded-md overflow-hidden border border-border/50 group">
+              <div className="relative h-[400px] w-full rounded-lg overflow-hidden border border-border shadow-sm">
                 <Image 
-                  src={encodeURI("/assets/buildinganalytics/WhatsApp Image 2026-07-12 at 11.25.54 PM.jpeg")}
-                  alt="RAG Pipeline Architecture"
+                  src="/p--sivamohanbabu/assets/buildinganalytics/Screenshot (3).png"
+                  alt="Modern Data Architecture Diagram"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
