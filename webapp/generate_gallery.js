@@ -5,6 +5,7 @@ const baseDir = path.join(__dirname, 'public', 'assets');
 const folders = ['training_pictures', 'group_pictures', 'orientation', 'students_presentations'];
 
 let images = [];
+let groupPictures = [];
 
 folders.forEach(folder => {
   const folderPath = path.join(baseDir, folder);
@@ -12,7 +13,11 @@ folders.forEach(folder => {
     const files = fs.readdirSync(folderPath);
     files.forEach(file => {
       if (file.match(/\.(jpg|jpeg|png|gif)$/i)) {
-        images.push(`/p--sivamohanbabu/assets/${folder}/${file}`);
+        const fullPath = `/p--sivamohanbabu/assets/${folder}/${file}`;
+        images.push(fullPath);
+        if (folder === 'group_pictures') {
+          groupPictures.push(fullPath);
+        }
       }
     });
   }
@@ -28,9 +33,14 @@ const content = `// Auto-generated list of all gallery images
 export const galleryImages = [
   ${images.map(img => `encodeURI("${img}")`).join(',\n  ')}
 ];
+
+// Auto-generated list of group pictures
+export const groupPictures = [
+  ${groupPictures.map(img => `encodeURI("${img}")`).join(',\n  ')}
+];
 `;
 
 fs.mkdirSync(path.join(__dirname, 'src', 'lib'), { recursive: true });
 fs.writeFileSync(path.join(__dirname, 'src', 'lib', 'gallery-images.ts'), content);
 
-console.log(`Generated src/lib/gallery-images.ts with ${images.length} images.`);
+console.log(`Generated src/lib/gallery-images.ts with ${images.length} images and ${groupPictures.length} group pictures.`);
