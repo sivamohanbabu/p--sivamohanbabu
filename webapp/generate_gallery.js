@@ -12,7 +12,7 @@ folders.forEach(folder => {
     const files = fs.readdirSync(folderPath);
     files.forEach(file => {
       if (file.match(/\.(jpg|jpeg|png|gif)$/i)) {
-        images.push(`/assets/${folder}/${file}`);
+        images.push(`/p--sivamohanbabu/assets/${folder}/${file}`);
       }
     });
   }

@@ -57,7 +57,7 @@ export function TrainingDomains() {
               playsInline
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             >
-              <source src={encodeURI("/assets/classroom/VID-20260420-WA0014.mp4")} type="video/mp4" />
+              <source src={encodeURI("/p--sivamohanbabu/assets/classroom/VID-20260420-WA0014.mp4")} type="video/mp4" />
             </video>
             <div className="relative z-10 h-full p-6 flex flex-col justify-end bg-gradient-to-t from-background via-background/90 to-background/20">
               <Users className="w-8 h-8 text-primary mb-3" />

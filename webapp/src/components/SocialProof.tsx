@@ -29,7 +29,7 @@ export function SocialProof() {
                   className="w-full h-full object-cover bg-black"
                   poster=""
                 >
-                  <source src={encodeURI("/assets/testimonials/Testimonial -1.mp4")} type="video/mp4" />
+                  <source src={encodeURI("/p--sivamohanbabu/assets/testimonials/Testimonial -1.mp4")} type="video/mp4" />
                 </video>
               </CardContent>
             </Card>
@@ -42,7 +42,7 @@ export function SocialProof() {
                   className="w-full h-full object-cover bg-black"
                   poster=""
                 >
-                  <source src={encodeURI("/assets/testimonials/Testimonial-2.mp4")} type="video/mp4" />
+                  <source src={encodeURI("/p--sivamohanbabu/assets/testimonials/Testimonial-2.mp4")} type="video/mp4" />
                 </video>
               </CardContent>
             </Card>
